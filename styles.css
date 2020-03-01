@@ -1,0 +1,416 @@
+@charset "utf-8";
+
+/* Box Sizing Reset */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Image Reset */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Table Reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove Margins on the body */
+body {
+  margin: 0 5px 0 5px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+/* Background */
+body {
+  background-color: #ffc815;
+}
+
+/* Header */
+nav {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 15px;
+  color: #585858;
+  max-width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 30px 0 30px 0;
+}
+
+li {
+  list-style: none;
+}
+
+.line {
+  margin: auto;
+  width: 80vw;
+  border-bottom: 4px solid #585858;
+  border-radius: 10px;
+}
+
+/* Banner */
+.banner {
+  display: block;
+  font-size: 45px;
+  font-size-adjust: 10px;
+  text-transform: uppercase;
+  font-family: "Playfair Display SC", "serif";
+  color: whitesmoke;
+  letter-spacing: -4px;
+  margin: 0;
+  line-height: 146%;
+}
+
+#first-name,
+#last-name {
+  font-weight: 400;
+}
+
+#first-name {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+#last-name {
+  margin: 0 0 50px 0;
+  text-align: right;
+}
+
+.banner #down-arrow {
+  display: none;
+}
+
+/* About */
+.about h1 {
+  display: none;
+}
+
+.about p {
+  font-family: "Montserrat", "sans-serif";
+  color: white;
+  max-width: 290px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.8em;
+}
+
+.about p i {
+  font-weight: 700;
+}
+
+/* Works */
+.works #number {
+  margin-top: 9px;
+}
+
+.works h1 {
+  font-size: 80px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Playfair Display SC", "serif";
+  font-style: italic;
+  text-align: right;
+  letter-spacing: -4px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.works img {
+  width: 306px;
+  display: block;
+  margin: 0 auto;
+}
+
+.grid {
+  font-family: "Montserrat", "sans-serif";
+  display: grid;
+  grid-template-columns: 24px 1fr auto;
+  color: white;
+}
+
+.grid img {
+  max-width: 3px;
+}
+
+.grid h3 {
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.grid p {
+  margin-bottom: 0;
+}
+
+.skills {
+  width: 306px;
+  margin: auto;
+}
+
+.skills h4 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Montserrat", "sans-serif";
+  margin-bottom: 10px;
+}
+
+.logo-skills-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0;
+}
+
+.logo-skills-grid .item {
+  border: 1px solid #fff;
+  padding: 35px;
+  text-align: center;
+}
+
+.logo-skills-grid img {
+  max-width: 30px;
+  max-height: auto;
+}
+
+.logo-skills-grid #logo-phone {
+  height: 33px;
+  width: auto;
+}
+
+.level-up,
+.notflix,
+.portfolio,
+.ux-report {
+  margin-bottom: 40px;
+}
+
+.ux-skills {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.ux-skills .item {
+  border: 1px solid #fff;
+  padding: 20px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  font-family: "Montserrat", "sans-serif";
+}
+
+/* Contact */
+.contact {
+  margin-bottom: 50px;
+}
+.contact h1 {
+  font-size: 80px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Playfair Display SC", "serif";
+  letter-spacing: -4px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.contact p {
+  font-family: "Montserrat", "sans-serif";
+  color: white;
+  max-width: 290px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.contact i {
+  font-weight: 600;
+}
+
+.social-icons {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 30px;
+}
+
+.social-icons img {
+  border: none;
+  background-color: transparent;
+  border-radius: 15px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.social-icons .item {
+  border: 1px solid #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Footer */
+footer p {
+  margin: 30px;
+  font-family: "Montserrat", "sans-serif";
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .banner {
+    font-size: 90px;
+  }
+
+  .about p,
+  .contact p {
+    max-width: 470px;
+    line-height: 2em;
+    font-size: 1.5em;
+  }
+
+  .works h1,
+  .contact h1 {
+    font-size: 150px;
+  }
+
+  .works #number {
+    font-size: 2em;
+  }
+
+  .works img {
+    width: 600px;
+  }
+
+  .grid h3 {
+    font-size: 4em;
+  }
+
+  .grid {
+    grid-template-columns: 73px 1fr auto;
+  }
+
+  .skills {
+    width: 600px;
+  }
+
+  .skills h4 {
+    font-size: 2em;
+  }
+
+  .logo-skills-grid .item {
+    padding: 60px;
+  }
+
+  .logo-skills-grid img {
+    max-width: 70px;
+    max-height: auto;
+  }
+
+  .logo-skills-grid #logo-phone {
+    height: 70px;
+  }
+
+  .ux-skills .item {
+    padding: 60px;
+    font-size: 1.5em;
+  }
+
+  .contact h1 {
+    font-style: italic;
+  }
+
+  .contact i {
+    font-weight: 700;
+  }
+
+  .social-icons {
+    margin: 80px;
+  }
+
+  .social-icons img {
+    border-radius: 30px;
+  }
+
+  .social-icons .item {
+    padding: 80px;
+  }
+
+  footer p {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .banner {
+    font-size: 110px;
+  }
+
+  #last-name {
+    margin: 0 0 90px 0;
+  }
+
+  .about p,
+  .contact p {
+    max-width: 650px;
+    line-height: 2em;
+    font-size: 1.8em;
+  }
+
+  .works h1,
+  .contact h1 {
+    font-size: 190px;
+  }
+
+  .works #number {
+    font-size: 2.5em;
+    margin-top: 13px;
+  }
+
+  .works img {
+    width: 850px;
+  }
+
+  .grid h3 {
+    font-size: 5em;
+  }
+
+  .skills {
+    width: 850px;
+  }
+
+  .skills h4 {
+    font-size: 2.5em;
+  }
+
+  .level-up,
+  .notflix,
+  .portfolio,
+  .ux-report {
+    margin-bottom: 60px;
+  }
+
+  .social-icons img {
+    border-radius: 45px;
+  }
+
+  .social-icons .item {
+    padding: 95px;
+  }
+
+}
